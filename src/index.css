@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background: #f7f5fb;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  color: #3f0071;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.name-input {
+  width: 100%;
+  height: 60px;
+  border-radius: 18px;
+  border: 2px solid #b184ff;
+  padding: 0 20px;
+  font-size: 20px;
+  outline: none;
+  background: white;
+  margin-bottom: 35px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.card-image {
+  width: 100%;
+  display: block;
+  border-radius: 26px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.name-box {
+  position: absolute;
+  top: 58.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52%;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #4b1680;
+  font-size: clamp(18px, 2vw, 34px);
+  font-weight: 700;
+
+  opacity: 0;
+  transition: all 0.4s ease;
+
+  text-align: center;
+  padding: 0 10px;
+
+  overflow: hidden;
+}
+
+.name-box span {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name-box.show {
+  opacity: 1;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+button {
+  flex: 1;
+  height: 58px;
+  border-radius: 18px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #6f1dff, #b56dff);
+  color: white;
+}
+
+.share-btn {
+  background: white;
+  border: 2px solid #b184ff;
+  color: #6f1dff;
+}
